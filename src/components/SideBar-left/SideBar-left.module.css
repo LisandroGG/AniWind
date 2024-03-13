@@ -1,0 +1,198 @@
+:root {
+    --logo: url('../../img/Profile.png')
+}
+
+[data-theme="dark"] {
+    --logo: url('../../img/Profile2.png')
+}
+
+.container{
+    height: 100vh;
+    position: fixed;
+    width: 15vw;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.containerOculto{
+    height: 100vh;
+    position: fixed;
+    width: 15vh;
+    transition: 0.5s;
+    width: 4vw;
+    overflow-x: hidden;
+
+    .img{
+        background-image: var(--logo);
+        background-size: cover;
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        top: 9vh
+    }
+
+    .btnContent{
+        display: none;
+    }
+
+    .user{
+        height: 20vh;
+    }
+
+    .datos{
+        height: 62.5vh;
+    }
+
+    .publicaciones{
+        padding-left: 10px;
+    }
+
+    .usuario{
+        height: 10vh;
+        margin-top: 0px;
+        padding-top: 0px;
+
+        h3{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+        .imagenes{
+            display: none;
+        }
+        
+    }
+    
+}
+
+.content{
+    width: 100%;
+    height: 82.5vh;
+    background-color: var(--content);
+    overflow-y: hidden;
+}
+
+.ocultar{
+    width: 100%;
+    height: 11vh;
+}
+
+.ocultarbtn{
+    border: none;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4a7a;
+    font-size: 23px;
+    color: #ffffff;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.ocultarbtn2{
+    border: none;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4a7a;
+    font-size: 23px;
+    color: #ffffff;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.usuario{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.img{
+    background-image: var(--logo);
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 9vh;
+}
+
+.imagenes{
+    padding: 3px;
+}
+
+.user{
+    height: 40vh;
+}
+
+.datos{
+    height: 43vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.publicaciones{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.btn{
+    display: flex;
+    border: none;
+    background-color: var(--content);
+    align-items: center;
+    text-align: start;
+    padding: 5px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--sideHover);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+.btnContent{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    color: var(--logoColor);
+}
+
+@media (max-width: 1024px) {
+    .container{
+        margin-top: 40px;
+    }
+    .containerOculto{
+        width: 7.5vw;
+    }   
+
+}
+
+@media (min-width: 2560px) {
+    .containerOculto{
+        width: 3.2vw;
+    } 
+    .content{
+        height: 83.5vh;
+    }
+    .btnContent{
+        font-size: 20px;
+    }
+}
+

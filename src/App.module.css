@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main{
+    padding-top: 4.8%
+}
+
+@media (min-width: 2560px) {
+    .main{
+        padding-top: 3.7%;
+    }
+}

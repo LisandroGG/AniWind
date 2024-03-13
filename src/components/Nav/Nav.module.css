@@ -1,0 +1,110 @@
+.fixed{
+    position: fixed;
+    width: 100%;
+    transition: 0.3 ease;
+    z-index: 1000;
+}
+
+.nav{
+    background-color: var(--nav_background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    font-size: 25px;
+}
+
+.nav ul li{
+    list-style: none;
+    padding: 26px;
+    transition: 0.1s;
+}
+
+.nav ul li:hover{
+    background-color: #eaeaf521;
+    color: var(--links);
+    font-weight: bolder;
+    border-bottom: 3px solid var(--links);
+}
+
+.container{
+    color: #ffffff;
+    margin-right: 30px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container label{
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+}
+
+.container span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #161b28;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.container span i{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.container input{
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+.container input:checked ~ span{
+    background-color: #40d04f;
+}
+
+.container input:checked ~ span i{
+    left: 32px;
+}
+
+@media (max-width: 1024px) {
+    .nav ul{
+        font-size: 22px;
+    }
+    .container{
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .nav ul{
+        font-size: 30px;
+    }
+    .container{
+        font-size: 26px;
+    }
+    .nav{
+        height: 9.1vh;
+        z-index: 9999;
+    }
+}
+
+
+
+
+

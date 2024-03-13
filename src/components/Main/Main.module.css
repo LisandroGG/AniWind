@@ -1,0 +1,20 @@
+.MainContainer{
+    display: grid; 
+    grid-template-columns: 15% 1fr 60% 1fr 15%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "left . middle . right"; 
+}
+
+.right { grid-area: right; }
+.left { grid-area: left; }
+.middle { grid-area: middle; }
+
+@media (max-width: 1024px) {
+    .MainContainer{
+        grid-template-columns: 15% 2% 66% 2% 15%;
+    }
+}
+
+

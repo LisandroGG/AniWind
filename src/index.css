@@ -1,0 +1,31 @@
+:root{
+  --body_background:#f1f0f6;
+  --nav_background:#615dfa;
+  --links: #6cdbe7;
+  --content: #ffffff;
+  --logoColor: black;
+  --sideHover: #eaeaf5;
+}
+
+[data-theme="dark"] {
+  --body_background:#161b28;
+  --nav_background: #7750f8;
+  --links: #40d04f;
+  --content: #1d2333;
+  --logoColor: white;
+  --sideHover: #293249;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  scrollbar-width: none;
+}
+
+
+
+body{
+  background-color: var(--body_background);
+  scrollbar-width: none;
+}
